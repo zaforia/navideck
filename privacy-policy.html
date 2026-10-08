@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NaviDeck プライバシーポリシー</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1b1f24; --muted: #5b6470; --line: #d9dee5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f141a; --fg: #e6e9ee; --muted: #9aa4b1; --line: #2a323c; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, "Yu Gothic UI", "Hiragino Sans", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6em; margin: 0 0 4px; }
+  h2 { font-size: 1.15em; margin: 2em 0 .4em; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; font-size: .95em; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<h1>NaviDeck プライバシーポリシー</h1>
+<p class="muted">制定日: 2026年10月8日 / 発行者: Zafoira</p>
+
+<p>NaviDeck（以下「本アプリ」）は、Windows タブレットを車載ナビとして使うためのアプリです。本アプリでの利用者の情報の扱いについて説明します。</p>
+
+<h2>1. 発行者が集める情報</h2>
+<p>発行者は、利用者の情報を集めていません。本アプリには、アクセス解析・広告・利用状況を送る機能がありません。アカウントの登録もありません。</p>
+
+<h2>2. この PC の中だけに保存する情報</h2>
+<p>次の情報は、利用者の PC の中だけに保存し、発行者には送りません。</p>
+<ul>
+  <li>現在地・走行の記録（ライントレースの調整用の記録は14日間、走行記録は最新1000件）</li>
+  <li>目的地の履歴・お気に入り・自宅などの登録地点</li>
+  <li>登録したオービス・取締ポイント</li>
+  <li>設定、ダウンロードした地図データ・声のデータ、案内音声のキャッシュ</li>
+  <li>アプリ画面で開いた各サービスのログイン情報（Cookie など。本アプリ内の WebView2 が保存します）</li>
+</ul>
+<p>保存先は %LOCALAPPDATA%\FreeNavi と C:\ProgramData\FreeNavi です。アプリをアンインストールしたあとにこれらのフォルダーを削除すると、すべて消えます。</p>
+
+<h2>3. 外部のサービスに送る情報</h2>
+<p>地図の表示や情報の取得のため、本アプリは次のサービスと通信します。送るのは、それぞれの機能に必要な範囲の情報だけです。各サービスでの扱いは、それぞれのプライバシーポリシーに従います。</p>
+<table>
+  <tr><th>サービス</th><th>用途</th><th>送る情報</th></tr>
+  <tr><td>OpenFreeMap</td><td>地図の表示</td><td>表示している範囲の地図タイルの要求</td></tr>
+  <tr><td>Geofabrik（OpenStreetMap データ）</td><td>地図データのダウンロード</td><td>選んだ地域のデータの要求</td></tr>
+  <tr><td>国土地理院</td><td>住所の検索、地点の住所の取得</td><td>検索した文字、地点の座標</td></tr>
+  <tr><td>気象庁</td><td>天気・気象警報</td><td>地域のデータの要求（座標は送りません）</td></tr>
+  <tr><td>日本道路交通情報センター（JARTIC オープン交通データ）</td><td>交通量からの渋滞推定（オンのとき）</td><td>ルート周辺の範囲</td></tr>
+  <tr><td>短縮リンクの提供元（Google マップ・Amazon など）</td><td>スマホから送られた短縮リンクの行き先の確認</td><td>送られたリンク</td></tr>
+  <tr><td>GitHub（VOICEVOX 公式のリリース）</td><td>追加の声のデータのダウンロード</td><td>ファイルの要求</td></tr>
+</table>
+<p>アプリ画面で開く Prime Video、Netflix、Apple Music、Discord などは各社の Web サイトです。ログインや視聴の情報は各社のサービスに直接送られ、本アプリは受け取りません。</p>
+
+<h2>4. スマホとの連携</h2>
+<p>「スマホから場所を送る」機能を使うと、本アプリは同じネットワーク上のスマホからの接続を待ち受けます。接続には QR コードに含まれるトークンが必要で、受け取った場所はこの PC の中でだけ使います。</p>
+
+<h2>5. 位置情報とセンサー</h2>
+<p>本アプリは、接続した GPS 受信機またはスマホからの位置情報と、タブレットの照度センサー・ジャイロ・加速度センサーを、案内・画面の明るさの調整・トンネル内での位置推定に使います。これらの情報は第三者に提供しません（3. の表にある、機能に必要な座標の送信を除きます）。</p>
+
+<h2>6. お子様の情報</h2>
+<p>本アプリは、お子様の個人情報を意図して集めることはありません。</p>
+
+<h2>7. このポリシーの変更</h2>
+<p>このポリシーを変更するときは、このページを更新し、制定日・改定日を記載します。</p>
+
+<h2>8. お問い合わせ</h2>
+<p id="contact">（準備中）</p>
+</main>
+</body>
+</html>
